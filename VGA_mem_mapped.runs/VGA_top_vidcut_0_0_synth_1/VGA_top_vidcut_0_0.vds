@@ -1,0 +1,292 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 18:05:25 2020
+# Process ID: 409
+# Current directory: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1
+# Command line: vivado -log VGA_top_vidcut_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_top_vidcut_0_0.tcl
+# Log file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/VGA_top_vidcut_0_0.vds
+# Journal file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source VGA_top_vidcut_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/ip_repo/VGA_disp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/vidcut/vidcut.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_1_0_D'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/john/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top VGA_top_vidcut_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 530 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1462.121 ; gain = 85.895 ; free physical = 119 ; free virtual = 6696
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_top_vidcut_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_vidcut_0_0/synth/VGA_top_vidcut_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'vidcut' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ipshared/0826/vidcut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'vidcut' (1#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ipshared/0826/vidcut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_top_vidcut_0_0' (2#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_vidcut_0_0/synth/VGA_top_vidcut_0_0.v:57]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[19]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[18]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[17]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[16]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[11]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[10]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[9]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[8]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[3]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[2]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[1]
+WARNING: [Synth 8-3331] design vidcut has unconnected port viddata[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1507.871 ; gain = 131.645 ; free physical = 271 ; free virtual = 6731
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1507.871 ; gain = 131.645 ; free physical = 237 ; free virtual = 6707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1507.871 ; gain = 131.645 ; free physical = 240 ; free virtual = 6709
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1786.910 ; gain = 0.000 ; free physical = 125 ; free virtual = 5826
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1786.910 ; gain = 0.000 ; free physical = 127 ; free virtual = 5819
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.29 . Memory (MB): peak = 1787.910 ; gain = 1.000 ; free physical = 122 ; free virtual = 5816
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1787.910 ; gain = 411.684 ; free physical = 145 ; free virtual = 5883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1787.910 ; gain = 411.684 ; free physical = 144 ; free virtual = 5883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1787.910 ; gain = 411.684 ; free physical = 144 ; free virtual = 5882
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1787.910 ; gain = 411.684 ; free physical = 149 ; free virtual = 5889
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3330] design VGA_top_vidcut_0_0 has an empty top module
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[19]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[18]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[17]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[16]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[11]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[10]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[9]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[8]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[3]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[2]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[1]
+WARNING: [Synth 8-3331] design VGA_top_vidcut_0_0 has unconnected port viddata[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1787.910 ; gain = 411.684 ; free physical = 212 ; free virtual = 5965
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1800.895 ; gain = 424.668 ; free physical = 122 ; free virtual = 5448
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1800.895 ; gain = 424.668 ; free physical = 189 ; free virtual = 5445
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 164 ; free virtual = 5440
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 128 ; free virtual = 5353
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 127 ; free virtual = 5353
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 127 ; free virtual = 5352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 126 ; free virtual = 5352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 125 ; free virtual = 5352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 125 ; free virtual = 5352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:39 . Memory (MB): peak = 1810.910 ; gain = 434.684 ; free physical = 125 ; free virtual = 5352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1810.910 ; gain = 154.645 ; free physical = 176 ; free virtual = 5405
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1810.918 ; gain = 434.684 ; free physical = 174 ; free virtual = 5406
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1816.910 ; gain = 0.000 ; free physical = 122 ; free virtual = 5266
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1816.910 ; gain = 452.242 ; free physical = 169 ; free virtual = 5314
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1816.910 ; gain = 0.000 ; free physical = 163 ; free virtual = 5311
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/VGA_top_vidcut_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP VGA_top_vidcut_0_0, cache-ID = 5b688fe543872426
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1820.910 ; gain = 0.000 ; free physical = 120 ; free virtual = 5291
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/VGA_top_vidcut_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_top_vidcut_0_0_utilization_synth.rpt -pb VGA_top_vidcut_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:13 . Memory (MB): peak = 1820.910 ; gain = 0.000 ; free physical = 119 ; free virtual = 5163
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 18:06:45 2020...

@@ -1,0 +1,489 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 18:05:25 2020
+# Process ID: 406
+# Current directory: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1
+# Command line: vivado -log VGA_top_axis_subset_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_top_axis_subset_converter_0_0.tcl
+# Log file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/VGA_top_axis_subset_converter_0_0.vds
+# Journal file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source VGA_top_axis_subset_converter_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/ip_repo/VGA_disp_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/vidcut/vidcut.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_1_0_D'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/john/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top VGA_top_axis_subset_converter_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 528 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1449.605 ; gain = 65.895 ; free physical = 125 ; free virtual = 6724
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/synth/VGA_top_axis_subset_converter_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'top_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/top_VGA_top_axis_subset_converter_0_0.v:60]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000010011011 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000010010011 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_DEFAULT_TLAST bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_subset_converter_v1_1_18_core' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000010011011 
+	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000010010011 
+	Parameter C_DEFAULT_TLAST bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_SIGNAL_SET_XOR bound to: 32'b00000000000000000000000000001000 
+	Parameter P_SIGNAL_SET_ADD bound to: 32'b00000000000000000000000000000000 
+	Parameter P_SIGNAL_SET_REM bound to: 32'b00000000000000000000000000001000 
+	Parameter P_TLAST_CNTR_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_subset_converter_v1_1_18_core' (1#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ipshared/33dd/hdl/axis_subset_converter_v1_1_vl_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'tdata_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tdata_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tdata_VGA_top_axis_subset_converter_0_0' (2#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tdata_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tuser_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tuser_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tuser_VGA_top_axis_subset_converter_0_0' (3#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tuser_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tid_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tid_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TID_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tid_VGA_top_axis_subset_converter_0_0' (4#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tid_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tdest_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tdest_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tdest_VGA_top_axis_subset_converter_0_0' (5#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tdest_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tstrb_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tstrb_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tstrb_VGA_top_axis_subset_converter_0_0' (6#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tstrb_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tkeep_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tkeep_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tkeep_VGA_top_axis_subset_converter_0_0' (7#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tkeep_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6157] synthesizing module 'tlast_VGA_top_axis_subset_converter_0_0' [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tlast_VGA_top_axis_subset_converter_0_0.v:48]
+	Parameter C_S_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'tlast_VGA_top_axis_subset_converter_0_0' (8#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/tlast_VGA_top_axis_subset_converter_0_0.v:48]
+INFO: [Synth 8-6155] done synthesizing module 'top_VGA_top_axis_subset_converter_0_0' (9#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/hdl/top_VGA_top_axis_subset_converter_0_0.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_top_axis_subset_converter_0_0' (10#1) [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/synth/VGA_top_axis_subset_converter_0_0.v:58]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tid[0]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[31]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[30]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[29]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[28]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[27]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[26]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[25]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[24]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[19]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[18]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[17]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[16]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[15]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[14]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[13]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[12]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[11]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[10]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[9]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[8]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[7]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[6]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[5]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[4]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[3]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[2]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[1]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[0]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tuser[0]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tdest[0]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[3]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[2]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[1]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[0]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[3]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[2]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[1]
+WARNING: [Synth 8-3331] design tlast_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[31]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[30]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[29]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[28]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[27]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[26]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[25]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[24]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[19]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[18]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[17]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[16]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[15]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[14]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[13]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[12]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[11]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[10]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[9]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[8]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[7]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[6]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[5]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[4]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[3]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[2]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[1]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tuser[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tid[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tdest[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[3]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[2]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[1]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tkeep[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[3]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[2]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[1]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tstrb[0]
+WARNING: [Synth 8-3331] design tkeep_VGA_top_axis_subset_converter_0_0 has unconnected port tlast
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[31]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[30]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[29]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[28]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[27]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[26]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[25]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[24]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[23]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[22]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[21]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[20]
+WARNING: [Synth 8-3331] design tstrb_VGA_top_axis_subset_converter_0_0 has unconnected port tdata[19]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.355 ; gain = 111.645 ; free physical = 178 ; free virtual = 6631
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.355 ; gain = 111.645 ; free physical = 279 ; free virtual = 6736
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1495.355 ; gain = 111.645 ; free physical = 279 ; free virtual = 6736
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/VGA_top_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.srcs/sources_1/bd/VGA_top/ip/VGA_top_axis_subset_converter_0_0/VGA_top_axis_subset_converter_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.395 ; gain = 0.000 ; free physical = 124 ; free virtual = 5819
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1796.395 ; gain = 0.000 ; free physical = 134 ; free virtual = 5803
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1796.395 ; gain = 0.000 ; free physical = 140 ; free virtual = 5816
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1796.395 ; gain = 412.684 ; free physical = 140 ; free virtual = 5870
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1796.395 ; gain = 412.684 ; free physical = 140 ; free virtual = 5871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1796.395 ; gain = 412.684 ; free physical = 135 ; free virtual = 5867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 1796.395 ; gain = 412.684 ; free physical = 170 ; free virtual = 5912
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 1796.395 ; gain = 412.684 ; free physical = 210 ; free virtual = 5961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1798.379 ; gain = 414.668 ; free physical = 122 ; free virtual = 5360
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1798.379 ; gain = 414.668 ; free physical = 121 ; free virtual = 5360
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 124 ; free virtual = 5358
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------+--------------------------------------+------+
+|      |Instance                               |Module                                |Cells |
++------+---------------------------------------+--------------------------------------+------+
+|1     |top                                    |                                      |     1|
+|2     |  inst                                 |top_VGA_top_axis_subset_converter_0_0 |     1|
+|3     |    axis_subset_converter_v1_1_18_core |axis_subset_converter_v1_1_18_core    |     1|
++------+---------------------------------------+--------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.395 ; gain = 423.684 ; free physical = 127 ; free virtual = 5396
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 1807.395 ; gain = 122.645 ; free physical = 163 ; free virtual = 5441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:40 . Memory (MB): peak = 1807.402 ; gain = 423.684 ; free physical = 163 ; free virtual = 5441
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1813.395 ; gain = 0.000 ; free physical = 140 ; free virtual = 5298
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:42 . Memory (MB): peak = 1813.395 ; gain = 429.789 ; free physical = 177 ; free virtual = 5341
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1813.395 ; gain = 0.000 ; free physical = 177 ; free virtual = 5341
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/VGA_top_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP VGA_top_axis_subset_converter_0_0, cache-ID = 15c4914c43feb151
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1817.395 ; gain = 0.000 ; free physical = 128 ; free virtual = 5287
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_axis_subset_converter_0_0_synth_1/VGA_top_axis_subset_converter_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file VGA_top_axis_subset_converter_0_0_utilization_synth.rpt -pb VGA_top_axis_subset_converter_0_0_utilization_synth.pb
+write_vhdl: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:08 . Memory (MB): peak = 1817.395 ; gain = 0.000 ; free physical = 144 ; free virtual = 5173
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 18:06:45 2020...

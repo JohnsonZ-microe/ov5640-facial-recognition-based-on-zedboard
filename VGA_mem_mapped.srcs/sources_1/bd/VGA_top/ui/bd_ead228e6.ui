@@ -1,0 +1,58 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 280 -defaultsOSRD
+preplace port VGA_vSync -pg 1 -y 710 -defaultsOSRD
+preplace port VGA_hSync -pg 1 -y 530 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 300 -defaultsOSRD
+preplace portBus VGA_B -pg 1 -y 590 -defaultsOSRD
+preplace portBus VGA_R -pg 1 -y 610 -defaultsOSRD
+preplace portBus VGA_G -pg 1 -y 630 -defaultsOSRD
+preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 6 -y 700 -defaultsOSRD
+preplace inst v_tc_0 -pg 1 -lvl 5 -y 780 -defaultsOSRD
+preplace inst axi_vdma_0 -pg 1 -lvl 4 -y 130 -defaultsOSRD
+preplace inst axi_intc_0 -pg 1 -lvl 4 -y -50 -defaultsOSRD
+preplace inst vidcut_0 -pg 1 -lvl 7 -y 610 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 5 -y 350 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -y -190 -defaultsOSRD
+preplace inst axis_subset_converter_0 -pg 1 -lvl 5 -y 580 -defaultsOSRD
+preplace inst ov5640_vga_0 -pg 1 -lvl 2 -y -100 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y 360 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y -330 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 2 -y 610 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 360 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 3 1 910
+preplace netloc processing_system7_0_DDR 1 6 2 NJ 280 NJ
+preplace netloc vidcut_0_vga_g 1 7 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_data 1 6 1 2400
+preplace netloc axis_subset_converter_0_M_AXIS 1 5 1 1900
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 6 2 2390J 530 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 2 5 610 520 NJ 520 1470J 500 NJ 500 2400
+preplace netloc axi_vdma_0_M_AXI_MM2S 1 4 1 1490
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 2 3 590 550 940 370 1450
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 4 1 1460
+preplace netloc axi_smc_M00_AXI 1 5 1 1920
+preplace netloc v_tc_0_irq 1 3 3 950 430 NJ 430 1890
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 6 220J 510 580J 540 970J 490 NJ 490 1920J 510 2390
+preplace netloc ps7_0_axi_periph_M01_AXI 1 3 2 NJ 360 1440
+preplace netloc xlconcat_0_dout 1 3 2 960 -260 1490
+preplace netloc processing_system7_0_FIXED_IO 1 6 2 NJ 300 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 1 210
+preplace netloc axi_vdma_0_mm2s_introut 1 3 2 970 240 1440
+preplace netloc vidcut_0_vga_b 1 7 1 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 10 0 210 280 600 530 920 270 1480 270 1910 520 2410
+preplace netloc ps7_0_axi_periph_M00_AXI 1 3 1 930
+preplace netloc v_tc_0_vtiming_out 1 5 1 1930
+preplace netloc axi_intc_0_irq 1 4 2 NJ -50 1930
+preplace netloc vidcut_0_vga_r 1 7 1 NJ
+preplace netloc v_axi4s_vid_out_0_vid_vsync 1 6 2 2400J 710 NJ
+levelinfo -pg 1 -10 110 400 760 1240 1690 2160 2560 2730 -top -420 -bot 920
+"
+}
+{
+   "da_axi4_cnt":"34",
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"13",
+   "da_ps7_cnt":"1"
+}

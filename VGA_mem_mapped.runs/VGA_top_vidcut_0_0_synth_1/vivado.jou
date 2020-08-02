@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 18:05:25 2020
+# Process ID: 409
+# Current directory: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1
+# Command line: vivado -log VGA_top_vidcut_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source VGA_top_vidcut_0_0.tcl
+# Log file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/VGA_top_vidcut_0_0.vds
+# Journal file: /home/john/vivadoproject/VGA_mem_mapped-master/VGA_mem_mapped.runs/VGA_top_vidcut_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source VGA_top_vidcut_0_0.tcl -notrace
